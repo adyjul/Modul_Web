@@ -1,0 +1,227 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+:root {
+   --bg-image: url(./Gambar/bg1.png);  
+}
+
+[data-theme="dark"] {    
+    --bg-image: url(./Gambar/bg.jpg);
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body{
+	font-style: 160px arial,sans-serif;
+	background-color: #eaeaea;
+	color: #333;
+	background-image: var(--bg-image);
+	height: 1000px;
+}
+
+
+
+.topbar p{
+		color: white;
+		text-align:center;
+}
+
+.topbar{
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 40px;
+	background-color: black;
+	position: fixed;
+	z-index: 999;
+}
+
+
+
+.container{
+	width: 990px;
+	margin: 80px auto;
+	position: relative;
+	background-color: white;
+	
+}
+  
+  
+
+.twiter{
+	width: 300px;
+	height: 300px;
+	background-image: url(./Gambar/111.png);
+	display: inline-block;
+	background-repeat: no-repeat;
+	text-indent: -9999px;
+	position: absolute;
+	top: -20px;
+	right: -106px;
+}
+
+.header{
+	padding: 20px;
+	padding-bottom: 10px; 
+	
+
+}
+
+.header .judul {
+	font-size: 40px;
+	font-weight: bold;
+}
+
+.header ul li {
+	display: inline-block;
+	margin-top: 10px;
+	margin-right: 6px;
+}
+
+.header a{
+	text-decoration: none;
+	color: salmon;
+	padding: 5px
+}
+
+
+.header a:hover{
+		background-color: white;
+		color:black;
+}
+
+.gambar{
+	height: 300px;
+	background-image: url(./Gambar/12.jpg);
+	background-size: cover;
+	background-position: 0 0;	
+	border-bottom: 5px solid royalblue;
+	border-top: 5px solid salmon;
+}
+
+.main{
+	width: 600px;
+	padding: 10px;
+	padding-left: 20px;
+	box-sizing: border-box;
+	float: left;
+}
+
+.main .penulis a{
+		text-decoration :none;
+		color:salmon;
+}
+
+.main .penulis a:hover{
+	color: black;
+	background-color: #eaeaea;
+}
+.main h1{
+	font-weight: bold;
+	font-size: 30px;
+	padding-bottom: 10px; 
+}
+
+.main .penulis{
+	font-size: 11px;
+	margin-top: -10px;
+}
+
+.main p{
+	margin:10px;
+	font-size: 13px;
+}
+
+.copyright{
+	background-color: #333;
+
+}
+
+.copyright p{
+	color: #eaeaea;
+	font-size: 15px;
+	text-align : center;
+}
+img {
+	width: 60px;
+	height: 80px;
+	padding: 10px;
+	float: left;
+}
+
+.sidebar h3{
+	color: #black;
+	font-weight: bold;
+}
+
+
+.sidebar{
+	width: 300px;
+	float: left;
+}
+
+.sidebar p{
+	font-size: default;
+}
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
